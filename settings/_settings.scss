@@ -1,0 +1,24 @@
+//-----
+// These partials do depend on order, as some of these conventions relate
+// heavily to one another
+//-----
+
+// Most decions regarding layout seem easier when guided by type. It makes sense
+// that this should be first.
+@import "typography";
+
+// Settings around site heights and widths. Some of these will inform how we set
+// up our grids and breakpoint settings.
+@import "dimensions";
+
+// Settings establishing our Susy grid calculations. Some of these may depend
+// on variables defined in `_dimensions`.
+@import "grids";
+
+// Settings creating our site's breakpoints using the Breakpoints plugin. Since
+// Breakpoints is supported by Susy, we should define these after we know our
+// grids.
+@import "breakpoints";
+
+// Colors are fairly standalone settings
+@import "colors";
