@@ -1,0 +1,12 @@
+//-----
+// This file contains height and width variables that we can use throughout the
+// project. Values should preferably be kept in `px` units, as a lot of designs
+// still think in those values. `px` units should then be converted _in use_,
+// either using function like `em()` or `rem()`. The Breakpoints plugin has a
+// setting that will handle conversion to `em`s for you.
+//
+// The only execption to this is if you'd like to store `calc()` expressions as
+// a variable.
+//-----
+
+$w-constrained: 960px; // Primary site constraint
