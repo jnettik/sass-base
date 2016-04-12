@@ -1,0 +1,28 @@
+//-----
+// Since we rely on [Susy](susydocs.oddbird.net) for managing our grids, this
+// file contains those grid definitions. Some sites may only need one, in which
+// case it's appropriate to use the `$susy` map, as Susy will check for that by
+// default and use those settings.
+//
+// Should your site require multiple grids, it may make sense to avoid using
+// that variable and rely on specifically namespaced variables; e.g.
+// `$constrained-large`. This will help communicate to future developers which
+// grid we're using elsewhere in the code.
+//
+// Tips: While the [Isolate method](https://www.palantir.net/blog/responsive-design-s-dirty-little-secret) is still preferred for a lot of layouts, Flexbox is quickly
+// making that obsolete. As such, it might be easier to avoid using Susy's
+// mixins in favor of using it's functions in combination with custom Flexbox
+// styles.
+//-----
+
+// Default grid settings
+$grid-defaults: (
+  math: fluid,
+  output: isolate
+);
+
+// Global Susy map
+$susy: map-merge($grid-defaults, (
+  columns: 12,
+  gutter: 1
+));
